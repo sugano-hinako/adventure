@@ -12,7 +12,9 @@ public class Main {
 		sh.departure();
 		sh.encount();
 		aniki.attack(sh);
-		//コード整理中
+		sh.attack(e);
+		sh.attack(aniki);
+		sh.attack(buka);
 	}
 
 }

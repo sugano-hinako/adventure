@@ -12,7 +12,7 @@ public class Hero {
 	public void attack(Enemy e) {
 		System.out.print(this.name + "の攻撃！");
 	    e.hp -= 5;
-	    System.out.println("5ダメージをあたえた!");
+	    System.out.println(e.name + "に5ダメージをあたえた!");
 	}
 	public void run() {
 	    System.out.println(this.name + "は逃げ出した！");
