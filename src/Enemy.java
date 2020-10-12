@@ -1,9 +1,14 @@
 
 public class Enemy {
-	String name ="ももんじゃ";
-	int hp = 50;
+	String name;
+	int hp;
 	final int LEVEL = 10;
 	char suffix;
+
+	public Enemy(String name, int hp) {
+		this.name = name;
+		this.hp = hp;
+	}
 
 	public void attack(SuperHero sh) {
 		System.out.print(this.name + "の攻撃！");

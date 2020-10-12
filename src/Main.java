@@ -2,19 +2,19 @@
 public class Main {
 
 	public static void main(String[] args) {
-		Enemy e = new Enemy();
-		SuperHero sh = new SuperHero();
+		//敵を生成
+		Enemy e = new Enemy("▼ももんじゃ", 50);
+		Enemy aniki = new Enemy("▼アニキ", 80);
+		Enemy buka = new Enemy("▼ブッカ", 30);
+		//主人公を生成
+		SuperHero sh = new SuperHero("▽スラリン", 100);
 
 		sh.departure();
-		sh.encount(e);
+		sh.encount();
+		aniki.attack(sh);
 		sh.attack(e);
-		e.attack(sh);
-		sh.fly();
-		sh.attack(e);
-		sh.land();
-		e.run();
-		sh.miss(e);
-		sh.remaind_hp();
+		sh.attack(aniki);
+		sh.attack(buka);
 	}
 
 }

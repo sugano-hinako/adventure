@@ -1,5 +1,9 @@
 
 public class SuperHero extends Hero{
+	public SuperHero(String name, int hp) {
+		this.name = name;
+		this.hp =hp;
+	}
 	boolean flying;
 	public void fly() {
 		this.flying = true;
