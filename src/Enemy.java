@@ -1,7 +1,7 @@
 
 public class Enemy {
-	String name ="ももんじゃ";
-	int hp = 50;
+	String name;
+	int hp;
 	final int LEVEL = 10;
 	char suffix;
 
